@@ -9,5 +9,6 @@
 ESP32CAN __attribute__((weak)) CAN0(GPIO_NUM_16, GPIO_NUM_17, 0) ;
 
 #if SOC_TWAI_CONTROLLER_NUM == 2 and ESP_IDF_VERSION >= ESP_IDF_VERSION_VAL(5, 2, 0)
-    ESP32CAN __attribute__((weak)) CAN1(GPIO_NUM_18, GPIO_NUM_19, 1);
+    ESP32CAN __attribute__((weak)) CAN1(GPIO_NUM_15, GPIO_NUM_23, 1);
 #endif
+
